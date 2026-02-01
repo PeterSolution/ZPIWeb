@@ -1,0 +1,27 @@
+.dashboard-page--panel {
+  padding-bottom: 16px !important;
+}
+
+.dashboard-grid {
+  margin-top: 16px;
+  display: grid;
+
+  /* Twoje kolumny */
+  grid-template-columns: 1fr minmax(340px, 50%);
+
+  /* KLUCZ: mniejszy gap żeby prawa kolumna startowała bardziej w lewo */
+  gap: 12px;
+
+  height: calc(100vh - 220px);
+}
+
+.dashboard-left {
+  height: 100%;
+  overflow: hidden;
+  border-radius: 18px;
+}
+
+.dashboard-right {
+  height: 100%;
+  overflow: hidden;
+}

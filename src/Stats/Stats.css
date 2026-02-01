@@ -1,0 +1,53 @@
+/* STRONA */
+.stats-page {
+  padding: 24px;
+  min-height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+/* NAGŁÓWEK */
+.stats-header {
+  margin-bottom: 24px;
+}
+
+.stats-header h1 {
+  font-size: 24px;
+  margin-bottom: 6px;
+}
+
+/* KONTENER NA KAFLE */
+.stats-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 26px; /* <<< TO JEST ODSTĘP MIĘDZY TYMI DWOMA BLOKAMI */
+}
+
+/* POJEDYNCZY KAFEL */
+.stats-card {
+  background: rgba(8, 14, 26, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+  padding: 22px 26px;
+  min-height: 110px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* TYTUŁ KAFLA */
+.stats-card h3 {
+  font-size: 13px;
+  letter-spacing: 0.4px;
+  opacity: 0.85;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+/* WARTOŚĆ */
+.stats-value {
+  font-size: 36px;
+  font-weight: 700;
+}

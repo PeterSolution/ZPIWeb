@@ -1,0 +1,45 @@
+.center-layout {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.camera-panel, .faces-panel {
+    flex: 1;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.camera-video {
+    width: 100%;
+    max-width: 640px;
+    border-radius: 8px;
+}
+
+.face-image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.face-image {
+    max-width: 100%;
+    max-height: 400px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.faces-error {
+    color: #d32f2f;
+    font-weight: bold;
+}
+
+.faces-info {
+    color: #666;
+}
+
+.faces-empty {
+    color: #999;
+    font-style: italic;
+}
