@@ -1,10 +1,7 @@
 import React from 'react';
-import type {ApiConfigType} from '../../Data/backEndConnection';
-import { useNavigate, useLocation } from 'react-router-dom';
-import apiConfig from '../../Data/backEndConnection';
 import './MyEnterComponent.css';
 
-const DashboardComponent: React.FC<{ iduser: number }> = ({iduser}) => {
+const DashboardComponent: React.FC<{ iduser: number }> = () => {
     // const location = useLocation();
     // const [enterTime, setEnterTime] = React.useState<string>('');
     // React.useEffect(() => {

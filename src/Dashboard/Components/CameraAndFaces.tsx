@@ -5,7 +5,7 @@ interface Props {
     userid: number;
 }
 
-const FaceImage: React.FC<Props> = ({ userid }) => {
+const FaceImage: React.FC<Props> = () => {
 
     return (
         <div>

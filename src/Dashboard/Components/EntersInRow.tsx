@@ -1,15 +1,9 @@
 import React from "react";
-import { useLocation } from "react-router-dom";
-import apiConfig from "../../Data/backEndConnection";
 import "./EntersInRow.css";
 
-type EntersInRowResponse = {
-    EntersInRow: number;
-    LastEdit: string;
-    userId: number;
-};
 
-const EntersInRow: React.FC<{ iduser: number }> = ({ iduser }) => {
+
+const EntersInRow: React.FC<{}> = () => {
     // const [entersInRow, setEntersInRow] = React.useState<number>(0);
     // const location = useLocation();
 

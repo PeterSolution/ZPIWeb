@@ -1,19 +1,4 @@
-import React, { useEffect, useState } from 'react';
-import apiConfig from '../../Data/backEndConnection';
 import './TopStatsBar.css';
-
-type Entry = {
-  id: number;
-  personId: number;
-  data: string;
-  place: string | null;
-};
-
-type EntersInRowRecord = {
-  userId: number;
-  EntersInRow: number;
-  LastEdit: string | null;
-};
 
 interface Props {
   userId: number;
@@ -23,10 +8,7 @@ interface Props {
 }
 
 const TopStatsBar: React.FC<Props> = ({
-  userId,
-  userName,
   showTodayStart = false,
-  onTodayStatusChange,
 }) => {
 
   return (

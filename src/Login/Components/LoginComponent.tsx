@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import type { ApiConfigType } from '../../Data/backEndConnection';
 import './LoginComponent.css';
-import { createRoot } from 'react-dom/client'
-import type {UserModel,ApiResponse} from '../../Interfaces/LoginConfirm';
+import type {UserModel} from '../../Interfaces/LoginConfirm';
 //import { User } from '../../Interfaces/LoginConfirm';
 
 
@@ -11,7 +10,7 @@ interface LoginPanelProps {
   onLoginSuccess: (user:UserModel) => void;
 }
 
-export const LoginPanel: React.FC<LoginPanelProps> = ({ apiConfig, onLoginSuccess }) => {
+export const LoginPanel: React.FC<LoginPanelProps> = ({ onLoginSuccess }) => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [loading, setLoading] = useState(false);
